@@ -2,8 +2,7 @@ package oop.demo01;
 
 public class Application {
     public static void main(String[] args) {
-        Student student = new Student();
-        student.name = "余浩正";
-        student.study();
+        Person person = new Person("余浩正",1);
+        System.out.println(person.name);
     }
 }
