@@ -1,16 +1,13 @@
 package oop;
 
-import oop.demo05.Person;
-import oop.demo05.Student;
+import oop.demo09.Outer;
 
 public class Application {
     public static void main(String[] args) {
-        //类型之间的转化: 父 子
-
-        //子类转换成父类，可能会丢失自己的一些方法！（相当于丢失精度）
-        Student student = new Student();
-        student.go();
-        Person person = student;
+        Outer outer = new Outer();
+        //通过外部类来实例化内部类
+        Outer.Inner inner = outer.new Inner();
+        inner.in();
     }
 }
 /*
